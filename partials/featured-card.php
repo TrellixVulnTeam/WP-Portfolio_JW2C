@@ -7,7 +7,7 @@
 ?>
 
 <div class="card border pointer" onclick="window.location.href='<?php echo esc_url( $args['permalink'] ); ?>'">
-	<header class="card-header card-header-big-bt">
+	<header class="card-header">
 
 		<p class="card-header-title">
 			<?php esc_html_e( $args['title'] ); ?>

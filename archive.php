@@ -49,7 +49,7 @@ get_template_part(
 					printf(
 						'<div class="column is-12 has-text-centered">
 							<h2 class="title">No results found</h2>
-							<p>Double check your search for typos or spelling errors,<br/>alternatively try a more generic search term.</p>
+							<p>Come back another time to see if we have any updates,<br/>alternatively try a search below.</p>
 						</div>'
 					);
 				endif;

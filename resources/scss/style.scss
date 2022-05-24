@@ -7,6 +7,14 @@ $link: #ff7700;
 $title-color: $primary;
 $title-weight: 800;
 
+.border-raduis-70 {
+    border-radius: 70px;
+}
+
+.border-primary-top {
+    border-top: 2px solid $primary;
+}
+
 @import 'animations/fade.scss';
 @import 'buttons/buttons.scss';
 @import 'pill/pill.scss';

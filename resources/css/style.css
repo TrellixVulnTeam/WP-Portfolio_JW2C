@@ -1,3 +1,9 @@
+.border-raduis-70 {
+  border-radius: 70px; }
+
+.border-primary-top {
+  border-top: 2px solid #1e2246; }
+
 .fade-in {
   animation: fadein 1s;
   -moz-animation: fadein 1s;

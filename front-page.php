@@ -36,14 +36,7 @@ $terms = get_terms(
 	<div class="container is-max-desktop p-3">
 		<div class="columns is-multiline">
 			<div class="column is-full">
-				<p>
-					<strong class="has-text-primary">Hi, my name is Matt!</strong> 
-					I am a WordPress backend developer with 3+ years experience in the <a href="https://www.wordpress.org">WordPress</a> environment. 
-					I have worked on a multitude of projects for some world-leading organizations.
-					I am a passionate individual who loves to travel, play sport and code. 
-					I have worked in lots of different places and on lots of different projects. 
-					I have even contributed to WordPress core! Please feel free to explore my blog where I write down all my related thoughts about places I have been and work I think is worth sharing.
-				</p>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</div>
@@ -84,15 +77,17 @@ $terms = get_terms(
 
 </div>
 
-<div class="container is-max-desktop p-3 mt-5 mb-5">
-	<h2 class="title is-2">Categories</h2>
-	<div class="columns is-multiline">
-		<div class="column is-full">
-			<?php foreach ( $terms as $term ) : ?>
-				<a class="pill" href="<?php echo esc_url( get_term_link( $term->term_id ) ); ?>"><?php esc_html_e( $term->name ); ?></a>
-			<?php endforeach; ?>
+<?php if ( $terms ) : ?>
+	<div class="container is-max-desktop p-3 mt-5 mb-5">
+		<h2 class="title is-2">Categories</h2>
+		<div class="columns is-multiline">
+			<div class="column is-full">
+				<?php foreach ( $terms as $term ) : ?>
+					<a class="pill" href="<?php echo esc_url( get_term_link( $term->term_id ) ); ?>"><?php esc_html_e( $term->name ); ?></a>
+				<?php endforeach; ?>
+			</div>
 		</div>
 	</div>
-</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>
