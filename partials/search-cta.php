@@ -7,7 +7,7 @@
 			<p class="subtitle">
 				<div class="columns is-centered">
 					<div class="column is-one-third">
-					<form>
+					<form method="get" action="<?php echo esc_url( get_site_url() ); ?>">
 						<input type="text" name="s" class="input is-normal" placeholder="Search..."/>
 					</form>
 				</div>
