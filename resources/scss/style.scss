@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+$primary: #1e2246;
+$info: #6e7296;
+$link: #ff7700;
+
+$title-color: $primary;
+$title-weight: 800;
+
+@import 'animations/fade.scss';
+@import 'pill/pill.scss';
+@import 'card/card.scss';
+@import 'footer/footer.scss';
+
+
+@import "../../node_modules/bulma/bulma.sass";

@@ -1,0 +1,25 @@
+//Cards
+$card-header-weight: 800;
+$card-shadow: none;
+$card-header-shadow: none;
+
+.card {
+    min-height: 130px;
+    border: $primary solid 2px;
+    cursor: pointer;
+
+    &:hover {
+        img {
+            transform: translate(8px, 0); 
+        }
+    }
+
+    img {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    a {
+        padding-right: 18px;
+        padding-top: 12px;
+    }
+}
