@@ -1,3 +1,11 @@
+<?php
+/**
+ * The featured card
+ *
+ * @package Portfolio
+ */
+?>
+
 <div class="card border pointer" onclick="window.location.href='<?php echo esc_url( $args['permalink'] ); ?>'">
 	<header class="card-header card-header-big-bt">
 

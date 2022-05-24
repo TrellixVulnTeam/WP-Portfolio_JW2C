@@ -34,6 +34,9 @@
   to {
     opacity: 1; } }
 
+.button-disabled {
+  opacity: 0.5; }
+
 .pill {
   background-color: #fff;
   border: #1e2246 solid 2px;
@@ -45,6 +48,9 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 32px; }
+  .pill:hover {
+    background-color: #1e2246;
+    color: #fff; }
 
 .card {
   min-height: 130px;

@@ -89,7 +89,7 @@ $terms = get_terms(
 	<div class="columns is-multiline">
 		<div class="column is-full">
 			<?php foreach ( $terms as $term ) : ?>
-				<a class="pill"><?php esc_html_e( $term->name ); ?></a>
+				<a class="pill" href="<?php echo esc_url( get_term_link( $term->term_id ) ); ?>"><?php esc_html_e( $term->name ); ?></a>
 			<?php endforeach; ?>
 		</div>
 	</div>

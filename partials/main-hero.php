@@ -1,6 +1,8 @@
 <?php
 /**
  * The main hero
+ *
+ * @package Portfolio
  */
 
 $title      = $args['title'] ?? '';
@@ -36,22 +38,28 @@ $hide_icons = $args['hide_icons'] ?? false;
 		<div class="container">
 			<?php if ( ! $hide_icons ) : ?>
 				<span class="icon-text">
-					<span class="icon">
-						<img src="<?php echo esc_url( get_icon_url( 'socials/linkedin-white.svg' ) ); ?>"/>
-					</span>
+					<a href="https://www.linkedin.com/in/matt-oakley-2aabb6143/" class="mr-2 ml-2" target="_blank">
+						<span class="icon">
+							<img src="<?php echo esc_url( get_icon_url( 'socials/linkedin-white.svg' ) ); ?>" alt="linkedin-icon"/>
+						</span>
+					</a>
 
-					<span class="icon">
-						<img src="<?php echo esc_url( get_icon_url( 'socials/instagram-white.svg' ) ); ?>"/>
-					</span>
+					<a href="https://www.instagram.com/matt.oakley.39/" class="mr-2 ml-2" target="_blank">
+						<span class="icon">
+							<img src="<?php echo esc_url( get_icon_url( 'socials/instagram-white.svg' ) ); ?>" alt="instagram-icon"/>
+						</span>
+					</a>
 
-					<span class="icon">
-						<img src="<?php echo esc_url( get_icon_url( 'socials/wordpress-white.svg' ) ); ?>"/>
-					</span>
+					<a href="https://wordpress.org/" class="mr-2 ml-2" target="_blank">
+						<span class="icon">
+							<img src="<?php echo esc_url( get_icon_url( 'socials/wordpress-white.svg' ) ); ?>" alt="wordpress-icon"/>
+						</span>
+					</a>
 
-					<a>
-					<span class="icon">
-							<img src="<?php echo esc_url( get_icon_url( 'socials/github-white.svg' ) ); ?>"/>
-					</span>
+					<a href="https://github.com/matt-oakley-dev" class="mr-2 ml-2" target="_blank">
+						<span class="icon">
+							<img src="<?php echo esc_url( get_icon_url( 'socials/github-white.svg' ) ); ?>" alt="github-icon"/>
+						</span>
 					</a>
 
 				</span>

@@ -1,6 +1,6 @@
 <?php
 /**
- * The functions. ooooooo!!
+ * The functions file
  *
  * @package Portfolio
  */

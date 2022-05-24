@@ -1,6 +1,8 @@
 <?php
 /**
- * The main hero
+ * The search
+ *
+ * @package Portoflio
  */
 
 get_header();

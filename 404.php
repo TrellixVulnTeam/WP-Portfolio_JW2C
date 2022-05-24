@@ -1,6 +1,8 @@
 <?php
 /**
  * The single
+ *
+ * @package Portfolio
  */
 
 get_header();
